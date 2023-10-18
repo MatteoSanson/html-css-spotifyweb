@@ -14,7 +14,6 @@ body {
     background-color: #141922;
 }
 
-
 .mega-container {
     display: flex;
 }
@@ -46,6 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 5.625rem;
 }
 
 .menu-bottom :first-child {
@@ -94,7 +95,7 @@ button {
 /* ++++ /testa ++++  */
 
 
-/* +++++ menu main ++++  */
+/* +++++ menu centrale alto ++++  */
 main .menu-main ul {
     display: flex;
     justify-content: center;
@@ -107,7 +108,7 @@ main .menu-main ul li{
     font-size: .75rem;
     font-weight: bold;
 }
-/* +++++ /menu main ++++  */
+/* +++++ /menu centrale alto ++++  */
 
 /* +++++++ /main +++++++++ */
 
@@ -119,5 +120,65 @@ main .menu-main ul li{
 footer {
     background-color: #282828;
     height: 5.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .625rem 0 .625rem;
+}
+
+/* .nav-left, .nav-center, .nav-right {
+    width: calc(100% / 3 - 1.25rem);
+} */
+
+/* .nav.left {
+    width: 18.75rem;
+} */
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left .album-riproduzione {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.brano-footer {
+    padding: 0 1.25rem 0 .625rem;
+}
+.nav-left .album-riproduzione img{
+    width: 100%;
+}
+
+.riproduzione-sopra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+}
+
+.riproduzione-sopra div > i {
+    font-size: 1.25rem;
+}
+
+.fa-regular.fa-circle-play {
+    font-size: 2rem;
+}
+
+.riproduzione-sotto {
+    display: flex;
+    justify-content: space-between;
+    gap: .625rem;
+    font-size: .75rem;
+}
+
+.playing {
+    width: 9.375rem;
+}
+
+.volume {
+    width: 5.3125rem;
 }
 /* /footer  */
