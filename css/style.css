@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    background-color: #141922;
 }
 
 
@@ -16,38 +17,39 @@ body {
     max-width: 3.125rem;
     height: calc(100vh - 5.625rem);
     padding: .625rem;
+
+}
+
+.menu-xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     position: relative;
 }
 
-.menu-xs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.menu-xs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.menu-xs img {
+    padding: .3125rem 0 .3125rem 0;
 }
 
 .menu-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     width: 100%;
+    text-align: center;
 }
 
 .tondo {
-    background: lightgray;
+    background: #282828;
     border-radius: 50%;
     overflow: hidden;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .tondo img {
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 
