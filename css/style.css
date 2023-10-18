@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -73,10 +77,37 @@ main {
 .testa {
     height: 5.625rem;
     background: black;
-    opacity: 0.4;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+button {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1.875rem;
+    padding: .625rem 1.25rem;
+    margin-right: .3125rem;
 }
 /* ++++ /testa ++++  */
 
+
+/* +++++ menu main ++++  */
+main .menu-main ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 1.25rem;
+}
+
+main .menu-main ul li{
+    font-size: .75rem;
+    font-weight: bold;
+}
+/* +++++ /menu main ++++  */
 
 /* +++++++ /main +++++++++ */
 
