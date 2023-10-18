@@ -11,10 +11,14 @@ body {
 }
 
 
+.mega-container {
+    display: flex;
+}
+
 /* menu laterale sinistro fisso  */
 #sidebar {
     background: black;
-    max-width: 3.125rem;
+    width: 3.125rem;
     height: calc(100vh - 5.625rem);
     padding: .625rem;
 
@@ -35,27 +39,46 @@ body {
 .menu-bottom {
     position: absolute;
     bottom: 30px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bottom :first-child {
+    width: 70%;
 }
 
 .tondo {
-    background: #282828;
+    background: #808080;
     border-radius: 50%;
     overflow: hidden;
     width: 1.875rem;
     height: 1.875rem;
+    text-align: center;
 }
 
 .tondo img {
-    width: 100%;
-    object-fit: cover;
+    width: 90%;
 }
-
-
 /* /menu laterale sinistro fisso  */
 
 
+
+/* ++++++++ main +++++++  */
+main {
+    width: calc(100% - 3.125rem);
+}
+
+/* ++++ testa ++++  */
+.testa {
+    height: 5.625rem;
+    background: black;
+    opacity: 0.4;
+}
+/* ++++ /testa ++++  */
+
+
+/* +++++++ /main +++++++++ */
 
 
 
@@ -63,8 +86,7 @@ body {
 
 /* footer  */
 footer {
-    background-color: grey;
-    width: 100%;
+    background-color: #282828;
     height: 5.625rem;
 }
 /* /footer  */
