@@ -89,8 +89,10 @@ button {
     color: white;
     border: 1px solid white;
     border-radius: 1.875rem;
-    padding: .625rem 1.25rem;
+    padding: .75rem 2.1875rem;
     margin-right: .3125rem;
+    font-size: .8125rem;
+    font-weight: bold;
 }
 /* ++++ /testa ++++  */
 
@@ -101,7 +103,6 @@ main .menu-main ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
-    margin: 1.25rem;
 }
 
 main .menu-main ul li{
