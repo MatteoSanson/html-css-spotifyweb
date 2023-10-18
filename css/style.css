@@ -141,6 +141,8 @@ footer {
     justify-content: space-between;
 }
 
+
+/* +++++ nav left +++++  */
 .nav-left .album-riproduzione {
     width: 1.875rem;
     height: 1.875rem;
@@ -149,6 +151,10 @@ footer {
 .brano-footer {
     padding: 0 1.25rem 0 .625rem;
 }
+/* ++++ /nav left +++++  */
+
+
+/* ++++ nav center +++  */
 .nav-left .album-riproduzione img{
     width: 100%;
 }
@@ -178,8 +184,12 @@ footer {
 .playing {
     width: 9.375rem;
 }
+/* ++++ /nav center ++++  */
 
+
++++++ nav right ++++
 .volume {
     width: 5.3125rem;
 }
+/* ++++ / nav right +++++  */
 /* /footer  */
