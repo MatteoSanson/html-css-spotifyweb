@@ -442,12 +442,46 @@ footer {
         width: 5rem;
 
     }
+    /* /footer  */
 }
 
 
 /* medium  */
 @media screen and (min-width: 768px) {
-    
+    /* footer  */
+    .nav-left .album-riproduzione {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    .brano-footer .nombre{
+        display: flex;
+        gap: .3125rem;
+    }
+
+    .nav-left .preferenze {
+        display: flex;
+        gap: .9375rem;
+    }
+
+    .riproduzione-sopra {
+        width: 12.5rem;
+        margin: 0 auto;
+    }
+
+    .playing {
+        width: 15.625rem;
+    }
+
+    .nav-right {
+        gap: .9375rem;
+    }
+
+    .volume {
+        width: 7.5rem;
+
+    }
+    /* /footer  */
 }
 
 /* large  */
