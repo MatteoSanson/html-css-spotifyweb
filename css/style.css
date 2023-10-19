@@ -17,66 +17,48 @@ ul {
 
 .mega-container {
     display: flex;
-    height: calc(100vh - 5.625rem);
+    height: calc(100% - 5.625rem);
 }
 
 /* menu laterale sinistro fisso  */
-#sidebar {
+.sidebar {
     background: black;
     width: 3.125rem;
-    padding: .625rem;
-    display: flex;
-    flex-direction: column;
+    padding: .3125rem 0 .625rem;
     flex-shrink: 0;
-}
-
-/* .menu-xs {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    position: relative;
-} */
-
-/* .menu-xs img {
-    padding: .3125rem 0 .3125rem 0;
-} */
-
-/* #sidebar img {
-    padding: .3125rem 0 .3125rem 0;
-} */
-/* .menu-bottom {
-    position: absolute;
-    bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 5.625rem;
 }
 
-.menu-bottom :first-child {
-    width: 70%;
-} */
+.sidebar .playlist {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
 
-#sidebar .download {
+.playlist .list {
+    overflow-y: auto;
+}
+
+.sidebar .profilo {
     margin-top: auto;
+}
+
+.sidebar .download {
     /* display: flex;
     flex-direction: column;
     gap: .625rem; */
+    /* display: block;
+    text-align: start; */
 }
 
-#sidebar div img {
-    display: block ;
+.sidebar div img {
+    /* display: block ; */
 }
 
-.bottom .download {
-    display: block;
-    text-align: start;
-}
-
-.bottom .download img {
-    object-fit: cover;
+.download img {
+    /* object-fit: cover; */
 }
 
 .tondo {
@@ -232,7 +214,10 @@ footer {
 
 /* small  */
 @media screen and (min-width: 576px) {
-
+    .sidebar {
+        width: 14.375rem;
+        padding: 1.25rem 0 .625rem 0;
+    }
 }
 
 
