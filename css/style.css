@@ -23,7 +23,7 @@ ul {
 .mega-container {
     display: flex;
     height: calc(100% - 5.625rem);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* menu laterale sinistro fisso  */
@@ -34,6 +34,7 @@ ul {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .logo {
@@ -250,6 +251,22 @@ footer {
 .brano-footer {
     padding: 0 1.25rem 0 .625rem;
 }
+
+.brano-footer .album {
+    font-size: .75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.brano-footer .nome-brano {
+    color: grey;
+    font-size: .625rem;
+    font-weight: bold;
+}
+
+.preferenze {
+    color: grey;
+}
 /* ++++ /nav left +++++  */
 
 
@@ -325,8 +342,25 @@ footer {
         overflow-y: hidden;
     }
 
+
     .menu .main-menu li span {
         display: inline-block;
+    }
+
+    .playlist .list li {
+        padding: .3125rem 0;
+        font-size: .75rem;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .playlist li.crea {
+        font-size: .9375rem;
+        font-weight: bold;
+    }
+
+    li.crea {
+        gap: .625rem;
     }
 
     .download {
