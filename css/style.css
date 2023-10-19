@@ -492,5 +492,9 @@ footer {
 
 /* extra large  */
 @media screen and (min-width: 1200px) {
-    
+    /* footer  */
+    .playing {
+        width: 26.875rem;
+    }
+    /* /footer  */
 }
