@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #141922;
+}
+
+ul {
+    list-style: none;
 }
 
 .mega-container {
@@ -187,7 +187,7 @@ footer {
 /* ++++ /nav center ++++  */
 
 
-+++++ nav right ++++
+/* +++++ nav right ++++ */
 .volume {
     width: 5.3125rem;
 }
