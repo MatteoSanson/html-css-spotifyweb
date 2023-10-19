@@ -179,10 +179,12 @@ hr {
 
 /* ++++++++ main +++++++  */
 main {
-    /* width: calc(100% - 3.125rem); */
+    /* width: calc(100% - 11.25rem); */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    /* miracoloso overflow-y auto  */
 }
 
 /* ++++ testa ++++  */
@@ -232,11 +234,11 @@ main .menu-main ul li{
     font-weight: bold;
 }
 
-.recently {
+.sezione-album {
     margin: 1.875rem 1.25rem 0 1.25rem;
 }
 
-.recently h2 {
+.sezione-album h2 {
     margin-bottom: 1.25rem;
 }
 
