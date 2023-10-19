@@ -11,6 +11,11 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 ul {
     list-style: none;
 }
@@ -18,6 +23,7 @@ ul {
 .mega-container {
     display: flex;
     height: calc(100% - 5.625rem);
+    overflow: hidden;
 }
 
 /* menu laterale sinistro fisso  */
@@ -30,11 +36,61 @@ ul {
     flex-direction: column;
 }
 
+.logo {
+    padding: 0 .625rem;
+}
+
+.logo img {
+    display: block;
+}
+
+.logo #logo-small {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.logo #logo {
+    display: none;
+}
+
 .sidebar .playlist {
+    display: none;
+}
+
+.menu {
+    padding:.625rem;
+}
+
+.menu .main-menu li {
+    padding: .625rem 0;
+}
+
+.menu .main-menu li a {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    overflow-y: hidden;
+    align-items: center;
+    font-size: .875rem;
+    gap: .3125rem;
+}
+
+.menu .main-menu li span {
+    display: none;
+}
+
+.menu img {
+    width: 1.25rem;
+}
+
+.playlist {
+    padding: .625rem;
+}
+
+.playlist .header {
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.fa-solid.fa-square-plus {
+    font-size: 2.5rem;
 }
 
 .playlist .list {
@@ -43,35 +99,32 @@ ul {
 
 .sidebar .profilo {
     margin-top: auto;
+    overflow: hidden;
 }
 
-.sidebar .download {
-    /* display: flex;
+.profilo {
+    display: flex;
     flex-direction: column;
-    gap: .625rem; */
-    /* display: block;
-    text-align: start; */
-}
-
-.sidebar div img {
-    /* display: block ; */
+    align-items: center;
+    /* align-content: center; */
+    gap: 1.25rem;
 }
 
 .download img {
-    /* object-fit: cover; */
+    width: 1.5625rem;
 }
 
 .tondo {
     background: #808080;
     border-radius: 50%;
     overflow: hidden;
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
     text-align: center;
 }
 
 .tondo img {
-    width: 90%;
+    width: 100%;
 }
 /* /menu laterale sinistro fisso  */
 
@@ -218,6 +271,27 @@ footer {
         width: 14.375rem;
         padding: 1.25rem 0 .625rem 0;
     }
+
+    .logo #logo-small {
+        display: none;
+    }
+    
+    .logo #logo {
+        display: block;
+        width: 8.25rem;
+    }
+
+    .sidebar .playlist {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow-y: hidden;
+    }
+
+    .menu .main-menu li span {
+        display: inline-block;
+    }
+
 }
 
 
