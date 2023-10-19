@@ -172,6 +172,8 @@ hr {
 main {
     /* width: calc(100% - 3.125rem); */
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ++++ testa ++++  */
@@ -182,6 +184,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 3.125rem);
 }
 
 button {
@@ -199,11 +205,16 @@ button {
 
 
 /* +++++ menu centrale alto ++++  */
+.menu-main {
+    padding-top: 5.625rem;
+}
+
 main .menu-main ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
+    padding: 1.25rem .625rem;
 }
 
 main .menu-main ul li{
@@ -386,6 +397,9 @@ footer {
         overflow-y: hidden;
     }
 
+    .testa {
+        width: calc(100% - 14.375rem);
+    }
 
     .menu .main-menu li span {
         display: inline-block;
