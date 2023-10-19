@@ -8,6 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #141922;
+    height: 100vh;
 }
 
 ul {
@@ -16,30 +17,35 @@ ul {
 
 .mega-container {
     display: flex;
+    height: calc(100vh - 5.625rem);
 }
 
 /* menu laterale sinistro fisso  */
 #sidebar {
     background: black;
     width: 3.125rem;
-    height: calc(100vh - 5.625rem);
     padding: .625rem;
-
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
-.menu-xs {
+/* .menu-xs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     position: relative;
-}
+} */
 
-.menu-xs img {
+/* .menu-xs img {
     padding: .3125rem 0 .3125rem 0;
-}
+} */
 
-.menu-bottom {
+/* #sidebar img {
+    padding: .3125rem 0 .3125rem 0;
+} */
+/* .menu-bottom {
     position: absolute;
     bottom: 30px;
     display: flex;
@@ -51,6 +57,26 @@ ul {
 
 .menu-bottom :first-child {
     width: 70%;
+} */
+
+#sidebar .download {
+    margin-top: auto;
+    /* display: flex;
+    flex-direction: column;
+    gap: .625rem; */
+}
+
+#sidebar div img {
+    display: block ;
+}
+
+.bottom .download {
+    display: block;
+    text-align: start;
+}
+
+.bottom .download img {
+    object-fit: cover;
 }
 
 .tondo {
@@ -71,7 +97,8 @@ ul {
 
 /* ++++++++ main +++++++  */
 main {
-    width: calc(100% - 3.125rem);
+    /* width: calc(100% - 3.125rem); */
+    flex-grow: 1;
 }
 
 /* ++++ testa ++++  */
@@ -193,3 +220,33 @@ footer {
 }
 /* ++++ / nav right +++++  */
 /* /footer  */
+
+
+
+
+
+
+
+
+/* +++++ RESPONSIVE ++++++  */
+
+/* extra small  */
+@media screen and (min-width: 576px) {
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
