@@ -70,6 +70,7 @@ ul {
     align-items: center;
     font-size: .875rem;
     gap: .3125rem;
+    text-align: center;
 }
 
 .menu .main-menu li span {
@@ -93,6 +94,11 @@ ul {
     font-size: 2.5rem;
 }
 
+.playlist .crea {
+    display: flex;
+    align-items: center;
+}
+
 .playlist .list {
     overflow-y: auto;
 }
@@ -105,27 +111,58 @@ ul {
 .profilo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* align-content: center; */
     gap: 1.25rem;
+    padding: 0 .625rem;
+    min-height: 50px;
+    flex-shrink: 0;
 }
+
 
 .download img {
     width: 1.5625rem;
 }
 
 .tondo {
+    display: flex;
+    align-items: center;
+}
+
+.tondo-img {
     background: #808080;
     border-radius: 50%;
     overflow: hidden;
     width: 1.5625rem;
     height: 1.5625rem;
-    text-align: center;
 }
 
-.tondo img {
-    width: 100%;
+.download span {
+    display: none;
 }
+
+.nome-profilo {
+    display: none;
+}
+
+.download, .tondo {
+    gap: .625rem;
+}
+
+.download {
+    font-size: .75rem;
+    color: grey;
+}
+
+.tondo .nome-profilo{
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+hr {
+    display: none;
+}
+/* .tondo span {
+    display: none;
+} */
 /* /menu laterale sinistro fisso  */
 
 
@@ -292,6 +329,23 @@ footer {
         display: inline-block;
     }
 
+    .download {
+        display: flex;
+        align-items: center;
+    }
+
+    .download span {
+        display: inline;
+    }
+
+    .nome-profilo {
+        display: inline;
+    }
+
+    hr {
+        display: block;
+        border-color: grey;
+    }
 }
 
 
