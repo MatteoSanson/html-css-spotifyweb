@@ -193,6 +193,7 @@ button {
     margin-right: .3125rem;
     font-size: .8125rem;
     font-weight: bold;
+    cursor: pointer;
 }
 /* ++++ /testa ++++  */
 
@@ -219,6 +220,11 @@ main .menu-main ul li{
 
 /* footer  */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* fixed  */
     background-color: #282828;
     height: 5.625rem;
     display: flex;
