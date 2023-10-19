@@ -215,11 +215,47 @@ main .menu-main ul {
     flex-wrap: wrap;
     gap: 1.25rem;
     padding: 1.25rem .625rem;
+    color: grey;
 }
 
 main .menu-main ul li{
     font-size: .75rem;
     font-weight: bold;
+}
+
+.recently {
+    margin: 1.875rem 1.25rem 0 1.25rem;
+}
+
+.recently h2 {
+    margin-bottom: 1.25rem;
+}
+
+.container-recently {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-info {
+    width: calc(100% / 2);
+    text-align: center;
+    padding: 10px;
+}
+
+.cover-album {
+    width: 100%;
+    height: 250px;
+    /* background-color: yellow; */
+}
+
+.cover-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h5 {
+    color: grey;
 }
 /* +++++ /menu centrale alto ++++  */
 
@@ -468,6 +504,15 @@ footer {
 
 /* medium  */
 @media screen and (min-width: 768px) {
+    /* main  */
+    .album-info {
+        width: calc(100% / 4);
+        text-align: center;
+        padding: 10px;
+    }
+    /* /main  */
+
+
     /* footer  */
     .nav-left .album-riproduzione {
         width: 3.125rem;
