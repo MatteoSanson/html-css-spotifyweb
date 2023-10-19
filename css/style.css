@@ -327,6 +327,7 @@ footer {
     font-size: .8125rem;
     font-weight: bold;
 }
+
 .volume {
     width: 5rem;
     height: .3125rem;
@@ -416,6 +417,30 @@ footer {
     hr {
         display: block;
         border-color: grey;
+    }
+
+    /* footer  */
+    .nav-left .album-riproduzione {
+        width: 2.8125rem;
+        height: 2.8125rem;
+    }
+
+    .brano-footer .nombre{
+        display: flex;
+        gap: .3125rem;
+    }
+
+    .playing {
+        width: 8.75rem;
+    }
+
+    .nav-right {
+        gap: .9375rem;
+    }
+
+    .volume {
+        width: 5rem;
+
     }
 }
 
