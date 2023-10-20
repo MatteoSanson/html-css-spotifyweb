@@ -259,14 +259,11 @@ main .menu-main ul li{
 
 .cover-album {
     width: 100%;
-    height: 250px;
-    /* background-color: yellow; */
     flex-shrink: 0;
 }
 
 .cover-album img {
     width: 100%;
-    height: 100%;
     object-fit: contain;
     flex-shrink: 0;
 }
