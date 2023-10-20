@@ -68,11 +68,15 @@ main {
 }
 
 .menu {
-    padding:.625rem;
+    padding: .625rem .625rem .625rem 0;
+}
+
+.main-menu {
+    /* padding-left: .625rem; */
 }
 
 .menu .main-menu li {
-    padding: .625rem 0;
+    padding: .625rem 0 .625rem .625rem;
 }
 
 .menu .main-menu li a {
@@ -85,6 +89,22 @@ main {
 
 .menu .main-menu li span {
     display: none;
+}
+
+.menu ul.main-menu li a{
+    color: grey;
+    transition: all 0.3s ease;
+}
+
+.menu ul.main-menu li:hover{
+    color: white;
+    filter: brightness(1.5);
+    border-left: 2px solid #adff2f;
+}
+
+.menu ul.main-menu li a:hover{
+    color: white;
+    filter: brightness(1.5);
 }
 
 .menu img {
@@ -114,6 +134,16 @@ main {
     overflow-y: auto;
 }
 
+.playlist .list li a{
+    transition: all 0.3s ease;
+}
+
+
+.playlist .list li a:hover {
+    color: white;
+    filter: brightness(1.5);
+}
+
 .list li a {
     color: grey;
 }
@@ -132,6 +162,15 @@ main {
     flex-shrink: 0;
 }
 
+.download {
+    transition: all 0.3s ease;
+}
+
+.download:hover {
+    color: white;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
 
 .download img {
     width: 1.5625rem;
@@ -178,6 +217,8 @@ hr {
 /* .tondo span {
     display: none;
 } */
+
+
 /* /menu laterale sinistro fisso  */
 
 
@@ -251,8 +292,16 @@ main .menu-main ul li{
 
 .menu-main ul li a {
     color: grey;
+    transition: all 0.3s ease;
 }
 
+.menu-main ul li a:hover {
+    color: white;
+    filter: brightness(1.5);
+}
+/* +++++ /menu centrale alto ++++  */
+
+/* ++++ sezione album ++++++  */
 .sezione-album {
     margin: 1rem 1.25rem 1rem 1.25rem;
 }
@@ -305,7 +354,8 @@ h5 {
     /* border-radius: 50%; */
     display: block;
 }
-/* +++++ /menu centrale alto ++++  */
+/* +++++ /sezione album +++++  */
+
 
 /* +++++++ /main +++++++++ */
 
@@ -319,7 +369,6 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* fixed  */
     background-color: #282828;
     height: 5.625rem;
     display: flex;
@@ -328,13 +377,6 @@ footer {
     padding: 0 .625rem 0 .625rem;
 }
 
-/* .nav-left, .nav-center, .nav-right {
-    width: calc(100% / 3 - 1.25rem);
-} */
-
-/* .nav.left {
-    width: 18.75rem;
-} */
 
 .nav-left, .nav-right {
     display: flex;
@@ -365,8 +407,28 @@ footer {
     font-weight: bold;
 }
 
+.nombre {
+    transition: all 0.3s ease;
+}
+
+.nombre:hover {
+    text-decoration: underline;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
 .preferenze {
     color: grey;
+}
+
+.fa-regular.fa-heart, .fa-regular.fa-folder {
+    transition: all 0.3s ease;
+}
+
+.fa-regular.fa-heart:hover, .fa-regular.fa-folder:hover {
+    color: white;
+    filter: brightness(1.5);
+    cursor: pointer;
 }
 /* ++++ /nav left +++++  */
 
@@ -389,6 +451,13 @@ footer {
 
 .fa-regular.fa-circle-play {
     font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.fa-regular.fa-circle-play:hover {
+    transform: scale(1.1);
+    filter: brightness(2);
+    cursor: pointer;
 }
 
 .riproduzione-sotto {
