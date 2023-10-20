@@ -114,6 +114,10 @@ main {
     overflow-y: auto;
 }
 
+.list li a {
+    color: grey;
+}
+
 .sidebar .profilo {
     margin-top: auto;
     overflow: hidden;
@@ -239,6 +243,10 @@ main .menu-main ul li{
     font-weight: bold;
 }
 
+.menu-main ul li a {
+    color: grey;
+}
+
 .sezione-album {
     margin: 1.875rem 1.25rem 0 1.25rem;
 }
@@ -269,8 +277,25 @@ main .menu-main ul li{
     flex-shrink: 0;
 }
 
+.album-info .title {
+    padding: .4375rem 0;
+}
+
 h5 {
     color: grey;
+}
+
+.cover-album.rotondo {
+    width: 100%;
+    border-radius: 50%;
+    /* background: yellow; */
+    overflow: hidden;
+}
+
+.cover-album.rotondo img {
+    width: 100%;
+    object-fit: fill;
+    /* border-radius: 50%; */
 }
 /* +++++ /menu centrale alto ++++  */
 
@@ -461,6 +486,12 @@ footer {
         font-size: .75rem;
         color: grey;
         font-weight: bold;
+    }
+
+    .playlist .list li a {
+        display: flex;
+        align-items: center;
+        gap: .3125rem;
     }
 
     .playlist li.crea {
