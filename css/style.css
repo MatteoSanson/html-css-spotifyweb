@@ -248,7 +248,7 @@ main .menu-main ul li{
 }
 
 .sezione-album {
-    margin: 1.875rem 1.25rem 0 1.25rem;
+    margin: 1rem 1.25rem 1rem 1.25rem;
 }
 
 .sezione-album h2 {
@@ -261,9 +261,9 @@ main .menu-main ul li{
 }
 
 .album-info {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 10px);
     text-align: center;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .cover-album {
@@ -283,6 +283,7 @@ main .menu-main ul li{
 
 h5 {
     color: grey;
+    padding-bottom: 1.25rem;
 }
 
 .cover-album.rotondo {
@@ -296,6 +297,7 @@ h5 {
     width: 100%;
     object-fit: fill;
     /* border-radius: 50%; */
+    display: block;
 }
 /* +++++ /menu centrale alto ++++  */
 
