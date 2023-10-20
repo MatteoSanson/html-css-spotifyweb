@@ -326,6 +326,7 @@ main .menu-main ul li{
     flex-shrink: 0;
 }
 
+
 .cover-album img {
     width: 100%;
     object-fit: contain;
@@ -496,6 +497,16 @@ footer {
     gap: .625rem;
     font-size: .8125rem;
     font-weight: bold;
+}
+
+
+.fa-list-ul, .fa-display, .fa-volume-high {
+    transition: all 0.3s ease;
+}
+
+.fa-list-ul:hover , .fa-display:hover, .fa-volume-high:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .volume {
