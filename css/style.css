@@ -190,8 +190,8 @@ main {
 /* ++++ testa ++++  */
 .testa {
     height: 5.625rem;
-    background: black;
-    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.7);
+    /* opacity: 0.7; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -199,10 +199,11 @@ main {
     top: 0;
     right: 0;
     width: calc(100% - 3.125rem);
+    padding-right: .9375rem;
 }
 
 button {
-    background: black;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     border: 1px solid white;
     border-radius: 1.875rem;
@@ -211,6 +212,7 @@ button {
     font-size: .8125rem;
     font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
 }
 /* ++++ /testa ++++  */
 
@@ -223,10 +225,12 @@ button {
 main .menu-main ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1.25rem;
     padding: 1.25rem .625rem;
     color: grey;
+    text-transform: uppercase;
 }
 
 main .menu-main ul li{
