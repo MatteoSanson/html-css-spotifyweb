@@ -293,11 +293,25 @@ main .menu-main ul li{
 .menu-main ul li a {
     color: grey;
     transition: all 0.3s ease;
+    /* prova  */
+    position: relative;
 }
 
 .menu-main ul li a:hover {
     color: white;
     filter: brightness(1.5);
+}
+
+.menu-main ul li a:hover::after {
+    content: "";
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #adff2f;
 }
 /* +++++ /menu centrale alto ++++  */
 
