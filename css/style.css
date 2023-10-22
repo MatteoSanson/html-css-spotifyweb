@@ -246,6 +246,8 @@ main {
     right: 0;
     width: calc(100% - 3.125rem);
     padding-right: .9375rem;
+    /* prova  */
+    z-index: 999;
 }
 
 button {
